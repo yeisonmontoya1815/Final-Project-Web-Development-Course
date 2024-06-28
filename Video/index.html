@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Example</title>
+  </head>
+  <body>
+    <h1>Example 1 - Inserting Video</h1>
+    <!-- controls activatecontrols of video 
+    autoplay
+    loop
+    muted
+    -->
+    <video src="sample_video.mp4" controls autoplay loop muted>Video</video
+    ><br />
+
+    <h1>Example 2 - Inserting Video</h1>
+    <video src="sample_video.mp4">Some content</video>
+
+    <h1>Example 3 - for multiple formats of video</h1>
+    <video controls autoplay loop muted>
+      <!-- Notice the `type` attribute to help the browser determine what video to play -->
+      <source src="sample_video.mp4" type="video/mp4" />
+      <source src="sample_video.webm" type="video/webm" />
+      <source src="sample_video.ogg" type="video/ogg" />
+    </video>
+
+    <h1>Example 4 - Inserting image background in a Video</h1>
+    <video src="sample_video.mp4" controls poster="vancouver.jpg">
+      Some content
+    </video>
+
+    <h1>Example 5 - Video</h1>
+    <video src="sample_video.mp4#t5,20">contents...</video>
+
+    <h1>Audio sample</h1>
+    <audio src="sample_audio.mp3" controls autoplay loop>Audio</audio>
+
+
+  </body>
+</html>
