@@ -1,0 +1,59 @@
+
+
+Ring_1
+Name: Blue Sapphire Ring
+Made of: Silver and Blue Sapphire
+Carat: 3carat,Sapphire  0.3carats,Diamonds
+Special annotations: This ring features a large, faceted sapphire set in the center, flanked by smaller diamonds. The intricate design and vibrant blue stone add a sophisticated accent to any outfit. Perfect for special occasions or as an everyday accessory, this piece is versatile and stylish.
+
+Ring_2
+Name: Teardrop Diamond Ring
+Made of: Silver and Diamonds
+Carat: 3.5carat
+Special annotations: This ring features a large teardrop-cut diamond at the center, surrounded by smaller diamonds in a halo pattern. The band has an intricate twisted design, also adorned with small diamonds. The luxurious and sophisticated design adds elegance to any outfit, making it perfect for special occasions or as a striking everyday accessory.
+
+
+Ring_3
+Name: Round Cut Diamond Ring
+Made of: White Gold, Platinum and Diamonds
+Carat: 1.5carat
+Special annotations: This ring features a large round-cut diamond at the center, surrounded by smaller diamonds in a halo design. The band has a pave setting, adding extra sparkle. The design stands out against a simple black backdrop, adding elegance to any outfit. Perfect for special occasions or as a stunning everyday accessory, this piece is versatile and stylish.
+
+
+Ring_4
+Name: Diamond Pattern Ring
+Made of: Gold and Diamonds
+Carat: 2carat
+Special annotations: This ring features a luxurious design with multiple diamonds set in triangular or kite-shaped settings. The intricate pattern adorns the entire ring, adding elegance and sparkle to any outfit. Perfect for special occasions or as a stunning everyday accessory, this piece is versatile and stylish.
+
+
+
+Ring_5
+Name: Diamond Enchant Ring
+Made of: Gold and Diamonds
+Carat: 1.5carat
+Special annotations: This ring features a luxurious design with multiple diamonds set in it. The large central diamond shines brilliantly, while the smaller surrounding diamonds enhance its beauty. The intricate design and high-end feel make it perfect for special occasions or as a stunning everyday accessory, adding elegance to any outfit.
+
+
+
+Ring_6
+Name: 18K Gold Engraved Ring
+Made of: 18K Gold 
+Carat: -
+Special annotations: This ring features high-quality 18K gold and an intricate design. The band is adorned with delicate engravings. The elegant and sophisticated design adds a touch of luxury to any outfit. The delicate engravings will continue to develop a unique patina with use, enhancing its charm over time.
+
+
+
+Ring_7
+Name: 18K Gold Pairing Rings
+Made of: 18K Gold
+Carat: -
+Special annotations: These pairing rings feature a simple and easy-to-wear design. Made from high-quality 18K gold, they are perfect for everyday wear as well as special occasions. The minimalist design adds elegance to any outfit, making these rings a timeless accessory.
+
+
+
+Ring_8
+Name: Silver Pairing Rings
+Made of: Silver
+Carat: -
+Special annotations: These pairing rings feature a simple and easy-to-wear design. Made from high-quality silver, they are perfect for everyday wear as well as special occasions. Ideal as wedding bands or pairing rings.The charm of this ring increases the more you use it after you purchase it, and after 10 years the changes will greatly exceed your expectations.
