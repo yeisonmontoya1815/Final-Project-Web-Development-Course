@@ -1,0 +1,56 @@
+
+Necklace_1
+Name: Radiant Elegance Necklace
+Made of: White gold, Platinum, Diamond
+Carat: 21carats.
+Special annotations: This necklace is composed of multiple square and rectangular links, each surrounding a diamond. The sophisticated design and sparkling diamonds combine to add elegance to any outfit. Lightweight and comfortable to fit, it is ideal for a wide range of occasions, from casual to formal.
+
+
+
+Necklace_2
+Name: Silver Articulation Bracelet
+Made of: Sterling Silver, Diamond
+Carat: 7carats.
+Special annotations: This bracelet consists of multiple linked pieces, giving it a flexible and possibly articulated structure. It features an intricate and detailed design that reflects light at various angles, giving it an elegant shine. It adds a sophisticated style to any outfit and is versatile for a wide range of occasions, from casual to formal.
+
+
+
+Necklace_3
+Name: Gold Braided Jewelry Set
+Made of: Gold, Diamond
+Carat: 4carats.
+Special annotations: This necklace features a thick braided design that is luxurious and bold. The delicate texture reflects light as the wearer moves, creating a beautiful sparkle. This accessory complements your style for a variety of occasions.
+
+
+
+Necklace_4
+Name: Teal Moon Pendant Set
+Made of: Gold and Gemstones
+Carat: Moon,1carat  Diamond shape,3carat
+Special annotations: This pendant set features a multifaceted teal-colored gemstone and a crescent moon-shaped pendant adorned with small gemstones. The intricate design and sparkling gemstones add elegance to any outfit.  They can also be worn separately.
+
+
+
+Necklace_5
+Name: Colorful Gemstone Layered Necklace
+Made of: Gold and Colorful Gemstones
+Special annotations: This necklace features an elegant layered design with two strands of different lengths. It is adorned with small, colorful gemstones that shine beautifully against the simple black backdrop.
+
+
+
+
+Necklace_6
+Name: Gold Link Necklace
+Made of: 18K Gold
+Carat: -
+Special annotations: This necklace features large interlocking links that sit beautifully just below the collarbone.Irregularly decorated rings will broaden your coordination.
+
+
+
+Necklace_7
+Name: Coin Pendant Necklace
+Made of:  18K Gold
+Carat: -
+Special annotations: This necklace features an elegant coin pendant, offering a simple yet sophisticated design. The embossed coin adds a classic touch, making it a unique accent for any outfit. Perfect for everyday wear or special occasions, this piece is versatile and stylish.
+
+
