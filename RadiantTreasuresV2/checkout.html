@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Checkout page for Radiant Treasures. Complete your purchase with our secure billing form."
+    />
+    <title>Checkout - Radiant Treasures</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+
+        <!-- fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="contactTitle">Radiant Treasures</h1>
+      <h2 class="contactSubTitle">Billing Information</h2>
+      <nav class="checkoutNavBar">
+        <ul>
+          <li class="checkoutNavBar"><a href="index.html">Home</a></li>
+          <li class="checkoutNavBar"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="orderSummary">
+      <h2>Order Summary</h2>
+      <div id="orderDetails"></div>
+    </section>
+
+    <section id="billingInformation">
+      <h2>Billing Information</h2>
+      <form id="checkoutForm" onsubmit="return handleCheckout()">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john.doe@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="123 Main St"
+            required
+          />
+        </div>
+        <div>
+          <label for="cardNumber">Card Number:</label>
+          <input
+            type="text"
+            id="cardNumber"
+            name="cardNumber"
+            placeholder="1234 5678 9012 3456"
+            required
+          />
+        </div>
+        <div>
+          <label for="expiryDate">Expiry Date:</label>
+          <input
+            type="text"
+            id="expiryDate"
+            name="expiryDate"
+            placeholder="MM/YY"
+            required
+          />
+        </div>
+        <div>
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="123" required />
+        </div>
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+      <div id="checkoutErrorMessages" style="color: red"></div>
+    </section>
+
+ <footer>
+    <p>&copy; 2024 Radiant Treasures. All rights reserved.</p>
+    <button onclick="window.location.href='contact.html'">Contact Us</button>
+    <div class="social-media">
+      <p>Follow us on:</p>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:info@radianttreasures.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </footer>
+
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Radiant Treasures offers exquisite jewelry and precious gems. Contact us for more information." />
+
+    <title>Radiant Treasures</title>
+
+    <!-- style   -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- logo window   -->
+    <link rel="icon" href="images/Logo.png" type="image/png" />
+
+    <!-- External CSS for Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      refer
+      rerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="navbar">
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#buy-online">Buy Online</a></li>
+
+          <li class="dropdown">
+            <a href="#services">Services</a>
+            <div class="dropdown-content">
+              <a href="#service1">Service 1</a>
+              <a href="#service2">Service 2</a>
+              <a href="#service3">Service 3</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#favorites">Favorites</a>
+            <div class="dropdown-content" id="favorites-dropdown">
+              <!-- Favorite items will be dynamically added here -->
+            </div>
+          </li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<section class="hero-section">
+  <h1>Radiant Treasures</h1><br><br>
+  <p>Your Radiance, Our Passion!</p>
+</section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Radiant Treasures, where we specialize in exquisite jewelry,
+        precious metals, and rare gems. Our curated collection reflects elegance
+        and beauty, with each piece chosen for its quality and craftsmanship.
+        Whether you're searching for a statement piece or a timeless classic, we
+        offer treasures that celebrate individuality. We take pride in our
+        personalized service and are honored to be part of your special moments.
+        Thank you for choosing Radiant Treasures.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2>Menu</h2>
+      <br /><br />
+      <div class="gallery">
+        <i class="fas fa-gem gallery-item" aria-hidden="true"></i>
+        <!-- Gem icon for Bracelet -->
+        <i class="fas fa-gem gallery-item" aria-hidden="true"></i>
+        <!-- Gem icon for Earrings -->
+        <i class="fas fa-ring gallery-item" aria-hidden="true"></i>
+        <!-- Ring icon -->
+        <i class="fas fa-diamond gallery-item" aria-hidden="true"></i>
+        <!-- Diamond icon for Necklace -->
+      </div>
+    </section>
+
+    <section id="buy-online">
+      <h2>Buy Online</h2>
+      <p>Explore our exclusive collection and make your purchase online.</p>
+
+      <h3>Bracelets</h3>
+        <div class="products">
+    <div class="product">
+      <img src="images/bracelet1.jfif" alt="Bracelet 1" />
+      <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 1')">❤️</span>
+      <h3>Yellow Gold 'Deluxe'</h3>
+      <p>$100.00</p>
+      <button class="buy-button" onclick="addToCart('Bracelet 1', 100)">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="images/bracelet2.jfif" alt="Bracelet 2" />
+      <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 2')">❤️</span>
+      <h3>White Gold 'Snake'</h3>
+      <p>$150.00</p>
+      <button class="buy-button" onclick="addToCart('Bracelet 2', 120)">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="images/bracelet3.jfif" alt="Bracelet 3" />
+      <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 3')">❤️</span>
+      <h3>Women's Classic Chain 'Stones'</h3>
+      <p>$150.00</p>
+      <button class="buy-button" onclick="addToCart('Bracelet 3', 150)">Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="images/bracelet4.jfif" alt="Bracelet 4" />
+      <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 4')">❤️</span>
+      <h3>Platinum 'Elegance'</h3>
+      <p>$200.00</p>
+      <button class="buy-button" onclick="addToCart('Bracelet 4', 200)">Buy Now</button>
+    </div>
+  </div>
+        <div class="product">
+          <img src="images/bracelet5.jfif" alt="Bracelet 5" />
+                <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 5')">❤️</span>
+
+          <h3>Men's Classic Chain 'Diplomatic'</h3>
+          <p>$150.00</p>
+          <button class="buy-button" onclick="addToCart('Bracelet 5', 190)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/bracelet6.jfif" alt="Bracelet 6" />
+                <span class="favorite-icon" onclick="toggleFavorite(this, 'Bracelet 6')">❤️</span>
+
+          <h3>'Thiny Goldy'</h3>
+          <p>$150.00</p>
+          <button class="buy-button" onclick="addToCart('Bracelet 6', 150)">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <h3>Earrings</h3>
+      <div class="products">
+        <div class="product">
+          <img src="images/earrings.jfif" alt="Earring 1" />
+                <span class="favorite-icon" onclick="toggleFavorite(this, 'Earring 1')">❤️</span>
+
+          <h3>Celestial Sparkle</h3>
+          <p>$200.00</p>
+          <button class="buy-button" onclick="addToCart('Earring 1', 200)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/earrings2.jfif" alt="Earring 2" />
+                          <span class="favorite-icon" onclick="toggleFavorite(this, 'Earring 2')">❤️</span>
+
+          <h3>Majestic Shimmer</h3>
+          <p>$250.00</p>
+          <button class="buy-button" onclick="addToCart('Earring 2', 250)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/earrings3.jfif" alt="Earring 3" />
+                          <span class="favorite-icon" onclick="toggleFavorite(this, 'Earring 3')">❤️</span>
+
+          <h3>Velvet Twilight</h3>
+          <p>$250.00</p>
+          <button class="buy-button" onclick="addToCart('Earring 3', 250)">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <h3>Finger Rings</h3>
+      <div class="products">
+        <div class="product">
+          <img src="images/fingerrings.jfif" alt="Finger Ring 1" />
+                          <span class="favorite-icon" onclick="toggleFavorite(this, 'Finger Ring 1')">❤️</span>
+
+          <h3>Whispering Stardust</h3>
+          <p>$300.00</p>
+          <button class="buy-button" onclick="addToCart('Finger Ring 1', 300)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/fingerrings2.jfif" alt="Finger Ring 2" />
+                                    <span class="favorite-icon" onclick="toggleFavorite(this, 'Finger Ring 2')">❤️</span>
+
+          <h3>Aurora Dream</h3>
+          <p>$350.00</p>
+          <button class="buy-button" onclick="addToCart('Finger Ring 2', 350)">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <h3>Necklaces</h3>
+      <div class="products">
+        <div class="product">
+          <img src="images/necklace2.jfif" alt="Necklace 1" />
+                                    <span class="favorite-icon" onclick="toggleFavorite(this, 'Necklace 1')">❤️</span>
+
+          <h3>Stellar Allure</h3>
+          <p>$400.00</p>
+          <button class="buy-button" onclick="addToCart('Necklace 1', 400)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/necklace3.jfif" alt="Necklace 2" />
+                                              <span class="favorite-icon" onclick="toggleFavorite(this, 'Necklace 2')">❤️</span>
+
+          <h3>Eclipse Elegance</h3>
+          <p>$450.00</p>
+          <button class="buy-button" onclick="addToCart('Necklace 2', 450)">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+<section id="cart">
+  <h2>Shopping Cart</h2>
+  <i class="fa-solid fa-cart-shopping"></i>
+  <ul id="cart-items"></ul>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <a href="checkout.html" id="checkout-button" class="button">Checkout</a>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Radiant Treasures. All rights reserved.</p>
+    <button onclick="window.location.href='contact.html'">Contact Us</button>
+    <div class="social-media">
+      <p>Follow us on:</p>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:info@radianttreasures.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Adjust for fixed header */
+}
+
+/* Header Styles */
+header {
+  background-color: hsl(0, 91%, 40%);
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .contactTitle {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header .contactSubTitle {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.checkoutNavBar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.checkoutNavBar li {
+  margin: 0 15px;
+}
+
+.checkoutNavBar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.checkoutNavBar a:hover {
+  text-decoration: underline;
+  color: #ffeb3b; /* Light yellow hover effect */
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Specific Styles for Order Summary */
+#orderSummary {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+#orderSummary h2 {
+  color: #c31414;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#orderSummary #orderDetails {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+/* Specific Styles for Order Confirmation */
+#confirmation {
+  text-align: center;
+}
+
+#confirmation h2 {
+  color: #c31414;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#confirmation h4 {
+  color: #333;
+  margin: 10px 0;
+}
+
+#confirmation p {
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: hsl(0, 91%, 40%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+footer .social-media {
+  margin-top: 20px;
+}
+
+footer .social-media p {
+  margin: 0;
+  font-weight: bold;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer .social-media a i {
+  margin-right: 8px;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkoutNavBar {
+    flex-direction: column;
+  }
+}
