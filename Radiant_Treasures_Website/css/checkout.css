@@ -171,8 +171,8 @@ footer .social-media a:hover {
   align-items: center;
   font-size: large; /* Reduce el tamaño del texto */
   padding: 10px; /* Ajusta el padding según sea necesario */
-  height: 60px; /* Ajusta la altura del cuadro según sea necesario */
-  border-bottom: #a00a0a 2px dashed;
+  height: 80px; /* Ajusta la altura del cuadro según sea necesario */
+  border-bottom: #a00a0a 2px solid; /* Añade un borde inferior de color rojo */
 }
 
 /* Responsive Design */

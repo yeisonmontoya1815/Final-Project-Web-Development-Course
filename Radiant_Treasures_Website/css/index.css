@@ -605,9 +605,8 @@ footer .social-media a:hover {
 }
 
 .Shopping:hover {
-  color: #d808087e; /* Light yellow hover effect */
+  color: #d4660cb1; /* Light yellow hover effect */
   font-weight: bolder; /* Bold text */
-  background-color: #fefffe; /* Light green background */
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
 }
 
