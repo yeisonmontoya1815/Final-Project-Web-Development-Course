@@ -1,5 +1,3 @@
-// js/scripts.js
-
 document.addEventListener("DOMContentLoaded", () => {
   // Menú móvil
   const mobileMenu = document.getElementById("mobile-menu");
@@ -25,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Manejo de favoritos
   window.toggleFavorite = (element, productName) => {
-    element.classList.toggle("favorited");
+    element.classList.toggle("active");
     const favoritesDropdown = document.getElementById("favorites-dropdown");
-    if (element.classList.contains("favorited")) {
+    if (element.classList.contains("active")) {
       const favoriteItem = document.createElement("a");
       favoriteItem.href = "#";
       favoriteItem.textContent = productName;
@@ -132,3 +130,65 @@ document.addEventListener("DOMContentLoaded", () => {
     orderDetails.innerHTML = "<p>No order details found.</p>";
   }
 });
+
+/* Función para manejar el envío del formulario de contacto */
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector(".navbar");
+
+  menuToggle.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+  });
+});
+
+
+// Get the modal
+var modal = document.getElementById("imageModal");
+
+// Get the image and insert it inside the modal
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+
+// Function to open modal with the clicked image
+function openModal(src, alt) {
+  modal.style.display = "block";
+  modalImg.src = src;
+  captionText.innerHTML = alt;
+}
+
+// Function to close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Add click event listeners to images
+document.querySelectorAll('.buy-online-image').forEach(image => {
+  image.addEventListener('click', function() {
+    openModal(this.src, this.alt);
+  });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  closeModal();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+// Add to cart functionality
+document
+  .getElementById("checkout-button")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    const total = document.getElementById("cart-total").textContent;
+    localStorage.setItem("cartTotal", total);
+    window.open("checkout.html", "_blank"); // Abre checkout.html en una nueva ventana
+  });
