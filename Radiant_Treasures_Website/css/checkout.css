@@ -75,12 +75,25 @@ header .checkoutNavBar a:hover {
 }
 
 /* Section Styles */
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#billingInformation,
+#orderSummary {
+  flex: 1;
+}
+
+#billingInformation {
+  margin-right: 20px; /* Space between sections */
+}
+
 section {
   padding: 20px;
   background-color: #fff;
-  margin: 20px auto;
   border-radius: 8px;
-  max-width: 800px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
 }
 
@@ -126,7 +139,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #a00a0a;
+  background-color: #0f7303;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 /* Footer Styles */
@@ -164,21 +179,23 @@ footer .social-media a:hover {
   text-decoration: underline;
 }
 
+/* Order Summary Styles */
 #orderSummary {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Coloca el texto en la parte central */
-  align-items: center;
-  font-size: large; /* Reduce el tamaño del texto */
-  padding: 10px; /* Ajusta el padding según sea necesario */
-  height: 80px; /* Ajusta la altura del cuadro según sea necesario */
-  border-bottom: #a00a0a 2px solid; /* Añade un borde inferior de color rojo */
+  justify-content: center;
+  align-items: left;
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+  height: 100%; /* Ensures it takes full height of its container */
+  border-left: 2px solid #a00a0a; /* Red border on the left */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .checkoutNavBar {
-    flex-direction: column;
-    text-align: center;
-  }
+/* List Styles */
+#orderSummary ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
 }

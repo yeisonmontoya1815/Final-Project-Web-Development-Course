@@ -134,10 +134,50 @@ document.getElementById("cvv").addEventListener("input", function () {
   }
 });
 
-// Manejo del carrito
-document.addEventListener("DOMContentLoaded", function () {
-  const total = localStorage.getItem("cartTotal");
-  if (total) {
-    document.getElementById("checkout-cart-total").textContent = total;
-  }
+//nuevo archivo checkout.js
+document.addEventListener("DOMContentLoaded", () => {
+  const checkoutItems = document.getElementById("checkout-items");
+  const checkoutTotal = document.getElementById("checkout-total");
+
+  // Clear existing items and total
+  checkoutItems.innerHTML = "";
+  checkoutTotal.textContent = "0.00";
+
+  // Retrieve cart from localStorage
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let total = 0;
+
+  // Populate checkout page with cart items
+  cart.forEach((item) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+    checkoutItems.appendChild(listItem);
+    total += item.price;
+  });
+
+  // Update total
+  checkoutTotal.textContent = total.toFixed(2);
 });
+
+//clear cart from local storage
+function handleCheckout(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  let hasError = false;
+
+  // Clear previous error messages
+  document
+    .querySelectorAll(".error-message")
+    .forEach((el) => (el.textContent = ""));
+
+  // Validate form inputs
+  // ... (existing validation code)
+
+  if (!hasError) {
+    // Clear the cart from localStorage
+    localStorage.removeItem("cart");
+
+    // Redirect to confirmation page if no errors
+    window.location.href = "confirmation.html";
+  }
+}

@@ -88,37 +88,39 @@ nav {
 }
 
 /* Hero Section Styles */
+/* Hero Section Styles */
 .hero-section {
   background-image: url("../images/diamond.webp");
-  background-size: cover; /* Ajustar para cubrir toda la sección */
-  background-position: -150px; /* Mueve la imagen 50 píxeles a la izquierda */
-  background-repeat: repeat-x; /* Evitar repetir la imagen de fondo */
-  position: relative; /* Permitir posicionamiento de elementos hijos */
+  background-size: cover; /* Adjust to cover the entire section */
+  background-position: -150px; /* Move the image 50 pixels to the left */
+  background-repeat: repeat-x; /* Avoid repeating the background image */
+  position: relative; /* Allow positioning of child elements */
   padding: 80px;
-  color: #000000; /* Asegurar buen contraste del texto con el fondo */
-  text-align: end; /* Alinear texto a la derecha */
+  color: #000000; /* Ensure good text contrast with the background */
+  text-align: end; /* Align text to the right */
   font-family: Arial, sans-serif;
   font-size: 2rem;
   font-weight: bolder;
   display: block;
   justify-content: flex-start;
   align-items: flex-end;
-  height: 40vh; /* Altura completa del viewport */
+  height: 40vh; /* Full viewport height */
   box-sizing: border-box;
   overflow: hidden;
-  border: #d0d2d0 2px double; /* Ajustar color según sea necesario */
+  border: #d0d2d0 2px double; /* Adjust color as needed */
 }
 
 /* Logo Styling */
 .hero-section .logo {
-  position: absolute;
-  border: #b10d0d 2px double; /* Ajustar color según sea necesario */
-  top: 20px; /* Ajustar según sea necesario */
-  left: 20px; /* Ajustar según sea necesario */
-  width: 120px; /* Ajustar tamaño según sea necesario */
-  height: 140px; /* Ajustar tamaño según sea necesario */
-  z-index: 1; /* Asegurar que el logo esté por encima del contenido */
+  position: absolute; /* Sets the position of the logo element */
+  border: #b10d0d 2px double; /* Sets the border color, width, and style of the logo */
+  top: 20px; /* Sets the distance from the top of the parent element */
+  left: 20px; /* Sets the distance from the left of the parent element */
+  width: 120px; /* Sets the width of the logo */
+  height: 140px; /* Sets the height of the logo */
+  z-index: 1; /* Sets the stacking order of the logo element */
 }
+
 
 /* Text Styling */
 .hero-section h1,
@@ -604,6 +606,7 @@ footer .social-media a:hover {
   }
 }
 
+/* Add hover effect to the .Shopping class */
 .Shopping:hover {
   color: #d4660cb1; /* Light yellow hover effect */
   font-weight: bolder; /* Bold text */
