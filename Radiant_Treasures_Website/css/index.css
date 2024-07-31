@@ -92,8 +92,8 @@ nav {
   background-image: url("../images/diamond.webp");
   background-size: cover; /* Ajustar para cubrir toda la sección */
   background-position: -150px; /* Mueve la imagen 50 píxeles a la izquierda */
-  background-repeat:repeat-x; /* Evitar repetir la imagen de fondo */
-  position:relative ; /* Permitir posicionamiento de elementos hijos */
+  background-repeat: repeat-x; /* Evitar repetir la imagen de fondo */
+  position: relative; /* Permitir posicionamiento de elementos hijos */
   padding: 80px;
   color: #000000; /* Asegurar buen contraste del texto con el fondo */
   text-align: end; /* Alinear texto a la derecha */
@@ -180,7 +180,7 @@ h3 {
 }
 
 #buy-online .product img:hover {
-  transform: scale(1.05);
+  transform: scale(2);
 }
 
 #buy-online .favorite-icon {
@@ -609,4 +609,17 @@ footer .social-media a:hover {
   font-weight: bolder; /* Bold text */
   background-color: #fefffe; /* Light green background */
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  width: 50%;
+  height: 315px;
 }

@@ -68,6 +68,7 @@ section {
   max-width: 800px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  margin-top: 80px; /* Adjusted margin to prevent overlap with fixed header */
 }
 
 section h2 {
@@ -100,7 +101,8 @@ form label {
   margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -108,7 +110,8 @@ form input, form textarea {
   font-size: 1rem;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: #c31414;
   outline: none;
 }

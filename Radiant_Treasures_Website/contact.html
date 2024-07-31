@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Radiant Treasures</title>
 
-    <link rel="stylesheet" href="css/contact.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Radiant Treasures</title>
 
-    <!-- fonts  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- form action to formspree.io -->
+  <form action="https://formspree.io/f/manwylaq" method="POST">
+        <header>
       <h1 class="contactTitle">Radiant Treasures</h1>
       <h2 class="contactSubTitle">Contact us!</h2>
       <nav class="checkoutNavBar">
@@ -30,7 +31,7 @@
         If you have any questions, feel free to reach out to us using the form
         below.
       </p>
-      <form id="contactForm" onsubmit="return handleContactFormSubmit()">
+      <form id="contactForm" action="confirmation.html" method="get">
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -52,21 +53,16 @@
       <p>&copy; 2024 Radiant Treasures. All rights reserved.</p>
       <div class="social-media">
         <p>Follow us on:</p>
-        <a href="https://www.facebook.com" target="_blank"
-          ><i class="fab fa-facebook"></i> Facebook</a
-        >
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i> Instagram</a
-        >
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-        <a href="mailto:info@radianttreasures.com"
-          ><i class="fas fa-envelope"></i> Email</a
-        >
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:info@radianttreasures.com"><i class="fas fa-envelope"></i> Email</a>
       </div>
-    </footer>
+  </form>
 
-    <script src="js/scripts.js"></script>
-  </body>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
