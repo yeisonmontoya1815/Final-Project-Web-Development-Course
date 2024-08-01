@@ -1,4 +1,3 @@
-# Final Project Web Development
 
 Welcome to the repository for the final project of the Web Development course. This project showcases a complete website for Radiant Treasures, specializing in exquisite jewelry and precious gems.
 
