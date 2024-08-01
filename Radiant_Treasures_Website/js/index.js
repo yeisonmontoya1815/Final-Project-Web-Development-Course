@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartTotal = document.getElementById("cart-total");
   let total = 0;
 
-  //nueo archivo index.js
+  //function to add to cart
   window.addToCart = (productName, productPrice) => {
     const cartItem = { name: productName, price: productPrice };
 
