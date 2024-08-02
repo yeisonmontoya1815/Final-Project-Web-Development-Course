@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  padding-top: 60px; /* Adjust for fixed header */
+  padding-top: 60px;
+  /* Adjust for fixed header */
 }
 
 /* Header Styles */
@@ -12,13 +13,16 @@ header {
   background-color: hsl(0, 91%, 40%);
   color: #fff;
   padding: 10px 0;
-  position: fixed; /* Fixed positioning */
+  position: fixed;
+  /* Fixed positioning */
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensures it stays on top */
+  z-index: 1000;
+  /* Ensures it stays on top */
   text-align: right;
-  box-shadow: 0 2px 4px rgba(22, 138, 14, 0.1); /* Adds shadow for depth */
+  box-shadow: 0 2px 4px rgba(22, 138, 14, 0.1);
+  /* Adds shadow for depth */
 }
 
 /* Navigation Styles */
@@ -29,25 +33,33 @@ nav {
   padding: 0 20px;
 }
 
+.topnav {
+  display: flex;
+}
+
 .navbar {
-  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .navbar li {
   margin: 0 15px;
 }
 
-.navbar a {
+a {
   color: #fff;
   text-decoration: none;
 }
 
-.navbar a:hover {
+a:hover {
   text-decoration: underline;
-  color: #ffeb3b; /* Light yellow hover effect */
+  color: #ffeb3b;
+  /* Light yellow hover effect */
 }
 
 /* Menu Toggle Styles */
@@ -77,9 +89,7 @@ nav {
 }
 
 .dropdown-content a {
-  color: #fff;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
 }
 
@@ -88,39 +98,51 @@ nav {
 }
 
 /* Hero Section Styles */
-/* Hero Section Styles */
 .hero-section {
   background-image: url("../images/diamond.webp");
-  background-size: cover; /* Adjust to cover the entire section */
-  background-position: -150px; /* Move the image 50 pixels to the left */
-  background-repeat: repeat-x; /* Avoid repeating the background image */
-  position: relative; /* Allow positioning of child elements */
+  background-size: cover;
+  /* Ajustar para cubrir toda la sección */
+  background-position: -150px;
+  /* Mueve la imagen 50 píxeles a la izquierda */
+  background-repeat: repeat-x;
+  /* Evitar repetir la imagen de fondo */
+  position: relative;
+  /* Permitir posicionamiento de elementos hijos */
   padding: 80px;
-  color: #000000; /* Ensure good text contrast with the background */
-  text-align: end; /* Align text to the right */
+  color: #000000;
+  /* Asegurar buen contraste del texto con el fondo */
+  text-align: end;
+  /* Alinear texto a la derecha */
   font-family: Arial, sans-serif;
   font-size: 2rem;
   font-weight: bolder;
   display: block;
   justify-content: flex-start;
   align-items: flex-end;
-  height: 40vh; /* Full viewport height */
+  height: 40vh;
+  /* Altura completa del viewport */
   box-sizing: border-box;
   overflow: hidden;
-  border: #d0d2d0 2px double; /* Adjust color as needed */
+  border: #d0d2d0 2px double;
+  /* Ajustar color según sea necesario */
 }
 
 /* Logo Styling */
 .hero-section .logo {
-  position: absolute; /* Sets the position of the logo element */
-  border: #b10d0d 2px double; /* Sets the border color, width, and style of the logo */
-  top: 20px; /* Sets the distance from the top of the parent element */
-  left: 20px; /* Sets the distance from the left of the parent element */
-  width: 120px; /* Sets the width of the logo */
-  height: 140px; /* Sets the height of the logo */
-  z-index: 1; /* Sets the stacking order of the logo element */
+  position: absolute;
+  border: #b10d0d 2px double;
+  /* Ajustar color según sea necesario */
+  top: 20px;
+  /* Ajustar según sea necesario */
+  left: 20px;
+  /* Ajustar según sea necesario */
+  width: 120px;
+  /* Ajustar tamaño según sea necesario */
+  height: 140px;
+  /* Ajustar tamaño según sea necesario */
+  z-index: 1;
+  /* Asegurar que el logo esté por encima del contenido */
 }
-
 
 /* Text Styling */
 .hero-section h1,
@@ -250,8 +272,10 @@ h3 {
 }
 
 .gallery-item:hover {
-  color: #ffeb3b; /* Light yellow hover effect */
-  transform: scale(1.1); /* Slight zoom effect */
+  color: #ffeb3b;
+  /* Light yellow hover effect */
+  transform: scale(1.1);
+  /* Slight zoom effect */
 }
 
 /* Product Styles */
@@ -279,7 +303,8 @@ h3 {
 }
 
 .product img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 .favorite-icon {
@@ -293,11 +318,13 @@ h3 {
 }
 
 .favorite-icon:hover {
-  color: #ff69b4; /* Pink hover effect */
+  color: #ff69b4;
+  /* Pink hover effect */
 }
 
 .favorite-icon.favorited {
-  color: #ff69b4; /* Pink for favorited state */
+  color: #ff69b4;
+  /* Pink for favorited state */
 }
 
 .buy-button {
@@ -310,7 +337,8 @@ h3 {
 }
 
 .buy-button:hover {
-  background-color: #d32f2f; /* Darker red hover effect */
+  background-color: #d32f2f;
+  /* Darker red hover effect */
 }
 
 /* Form and Cart Styles */
@@ -341,7 +369,8 @@ form button {
 }
 
 form button:hover {
-  background-color: #d32f2f; /* Darker red hover effect */
+  background-color: #d32f2f;
+  /* Darker red hover effect */
 }
 
 /* Footer Styles */
@@ -364,8 +393,6 @@ footer .social-media p {
 
 footer .social-media a {
   margin: 0 10px;
-  text-decoration: none;
-  color: #fff;
   display: inline-flex;
   align-items: center;
 }
@@ -380,16 +407,41 @@ footer .social-media a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar.active {
+    display: block;
+  }
+
   .navbar {
-    flex-direction: column;
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+    width: 100%;
   }
 
   .menu-toggle {
     display: flex;
   }
 
+  header {
+    text-align: left;
+  }
+
   .navbar li {
-    margin: 10px 0;
+    margin: 5px 0;
+  }
+
+  li {
+    padding: 10px 10px;
+  }
+
+  li:hover {
+    background-color: lightgray;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -397,7 +449,8 @@ footer .social-media a:hover {
 #contact {
   background-color: #fff;
   padding: 50px;
-  margin: 40px auto; /* Centered with margin auto */
+  margin: 40px auto;
+  /* Centered with margin auto */
   max-width: 600px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -433,7 +486,8 @@ footer .social-media a:hover {
 
 #contactForm input,
 #contactForm textarea {
-  width: 100%; /* Full width */
+  width: 100%;
+  /* Full width */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -466,12 +520,13 @@ footer .social-media a:hover {
 
 .button:hover {
   background-color: #11af03;
-  color: #ffffff; /* Change text color to white */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  color: #ffffff;
+  /* Change text color to white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
 }
 
 .checkoutNavBar {
-  list-style: none;
   color: #ddd;
   font-weight: bold;
   font-style: normal;
@@ -480,9 +535,12 @@ footer .social-media a:hover {
 
 /* Checkout Section Styles */
 .buy-online-image {
-  width: 90px; /* Adjust the width as needed */
-  height: 90px; /* Maintain aspect ratio */
-  margin: 5px; /* Optional: Add some margin around the images */
+  width: 90px;
+  /* Adjust the width as needed */
+  height: 90px;
+  /* Maintain aspect ratio */
+  margin: 5px;
+  /* Optional: Add some margin around the images */
 }
 
 /* Custom Break */
@@ -495,7 +553,8 @@ footer .social-media a:hover {
 }
 
 .favorite-icon.active {
-  color: rgb(228, 20, 20); /* Change to your desired color */
+  color: rgb(228, 20, 20);
+  /* Change to your desired color */
 }
 
 .Subtitles {
@@ -507,8 +566,10 @@ footer .social-media a:hover {
   color: #3711957e;
   font-weight: bolder;
   font-size: xx-large;
-  background-color: #fefffe; /* Light green background */
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+  background-color: #fefffe;
+  /* Light green background */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for text */
 }
 
 /* Secure Transaction Section Styles */
@@ -591,26 +652,13 @@ footer .social-media a:hover {
   text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-}
-
-/* Add hover effect to the .Shopping class */
 .Shopping:hover {
-  color: #d4660cb1; /* Light yellow hover effect */
-  font-weight: bolder; /* Bold text */
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+  color: #d4660cb1;
+  /* Light yellow hover effect */
+  font-weight: bolder;
+  /* Bold text */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for text */
 }
 
 .video-container {
