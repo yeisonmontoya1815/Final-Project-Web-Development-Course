@@ -62,10 +62,7 @@ a:hover {
   /* Light yellow hover effect */
 }
 
-#a > pressLetter{
-  color: #0d0d0d;
-  text-decoration: none;
-}
+
 
 /* Menu Toggle Styles */
 .menu-toggle {
@@ -621,4 +618,9 @@ footer .social-media a:hover {
 .video-container iframe {
   width: 50%;
   height: 315px;
+}
+
+#a > #pressLetter{
+  color: #0d0d0d;
+  text-decoration: none;
 }
