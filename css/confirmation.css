@@ -1,139 +1,127 @@
-/* General Styles */
+/* Basic styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header Styles */
 header {
-  background-color: #c31414; /* Deep red */
-  color: #fff;
-  padding: 20px 10px;
+  background-color: #c22412;
+  margin: 20px 20px 20px 20px;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid #a00a0a; /* Darker red bottom border */
-  border-radius: 0 0 20px 20px;
 }
 
-header .contactTitle {
-  font-size: 2.8rem;
+header h1,
+header h2 {
   margin: 0;
 }
 
-header .contactSubTitle {
-  font-size: 1.6rem;
-  margin: 5px 0;
-}
-
-header .checkoutNavBar {
+.checkoutNavBar ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-header .checkoutNavBar li {
-  display: inline;
-  margin: 0 12px;
+.checkoutNavBar li {
+  margin: 0 15px;
 }
 
-header .checkoutNavBar a {
-  color: #fff;
+.checkoutNavBar a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-header .checkoutNavBar a:hover {
+.checkoutNavBar a:hover {
   text-decoration: underline;
-  color: #ffeb3b; /* Light yellow hover effect */
 }
 
-/* Section Styles */
-section {
-  padding: 40px;
-  margin: 20px auto;
-  background-color: #fff;
-  border-radius: 12px;
-  max-width: 800px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #c31414;
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-}
-
-section h4 {
-  color: #444;
-  font-size: 1.4rem;
-  margin: 15px 0;
-}
-
-section p {
-  color: #666;
-  font-size: 1.1rem;
-  margin: 10px 0;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #c31414;
-  color: #fff;
-  text-align: center;
+#confirmation {
+  background-color: white;
   padding: 20px;
-  font-size: 1rem;
-  border-radius: 20px;
-  margin-top: 20px;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#confirmation h2 {
+  color: #c2271c;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin: 20px 20px 20px 20px;
 }
 
 footer .social-media {
-  margin-top: 15px;
-}
-
-footer .social-media p {
-  margin: 0;
-  font-weight: bold;
+  margin-top: 10px;
 }
 
 footer .social-media a {
-  margin: 0 12px;
+  color: white;
+  margin: 0 10px;
   text-decoration: none;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  font-size: 1.1rem;
-}
-
-footer .social-media a i {
-  margin-right: 8px;
 }
 
 footer .social-media a:hover {
   text-decoration: underline;
 }
 
+footer .social-media i {
+  margin-right: 5px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  header .checkoutNavBar {
-    display: flex;
+  header {
+    padding: 15px;
+  }
+
+  .checkoutNavBar ul {
     flex-direction: column;
     align-items: center;
   }
 
-  header .checkoutNavBar li {
+  .checkoutNavBar li {
     margin: 10px 0;
   }
 
-  section {
-    padding: 20px;
-    max-width: 90%;
+  #confirmation {
+    margin: 10px;
+    padding: 15px;
   }
 
   footer {
-    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .checkoutNavBar li {
+    margin: 5px 0;
+  }
+
+  #confirmation {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
   }
 }

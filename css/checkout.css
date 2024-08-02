@@ -2,9 +2,9 @@
 body {
   font-family: Arial, sans-serif;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   background-color: #f4f4f4;
-  padding-top: 60px; /* Adjust for fixed header */
+  padding-top: 10px; /* Adjust for fixed header */
 }
 
 /* Header Styles */
@@ -14,7 +14,6 @@ header {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
 
 header .contactTitle {
@@ -86,6 +85,24 @@ header .checkoutNavBar a:hover {
   flex: 1;
 }
 
+#orderSummary > #checkout-items,
+ch {
+  color: rgb(78, 81, 81);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: #333 1px solid;
+}
+
+#orderSummary > #checkout-total {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: xx-large;
+  display: inline;
+  flex-direction: row;
+  gap: 90px;
+}
+
 #billingInformation {
   margin-right: 20px; /* Space between sections */
 }
@@ -145,38 +162,31 @@ button[type="submit"]:hover {
 }
 
 /* Footer Styles */
+
 footer {
-  background-color: hsl(0, 91%, 40%);
-  color: #fff;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
-  font-size: 1rem;
-  border-radius: 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 footer .social-media {
-  margin-top: 20px;
-}
-
-footer .social-media p {
-  margin: 0;
-  font-weight: bold;
+  margin-top: 10px;
 }
 
 footer .social-media a {
+  color: white;
   margin: 0 10px;
   text-decoration: none;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-}
-
-footer .social-media a i {
-  margin-right: 8px;
 }
 
 footer .social-media a:hover {
   text-decoration: underline;
+}
+
+footer .social-media i {
+  margin-right: 5px;
 }
 
 /* Order Summary Styles */
@@ -198,4 +208,66 @@ footer .social-media a:hover {
   flex-direction: column;
   list-style: none;
   text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .contactTitle {
+    font-size: 2rem;
+  }
+
+  header .contactSubTitle {
+    font-size: 1.2rem;
+  }
+
+  .checkoutNavBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkoutNavBar li {
+    margin: 5px 0;
+  }
+
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  #billingInformation,
+  #orderSummary {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+
+  footer {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .contactTitle {
+    font-size: 1.5rem;
+  }
+
+  header .contactSubTitle {
+    font-size: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
 }
