@@ -15,7 +15,7 @@ Welcome to the repository for the final project of the Web Development course. T
 
 ## Live Demo
 
-You can view the live presentation of the project on the [Presentation Letter](https://github.com/yeisonmontoya1815/Final-Project-Web-Development-Course/blob/main/Radiant_Treasures_Website/Presentation_Letter.html) link.
+You can view the live presentation of the project on the [Presentation Letter](https://github.com/yeisonmontoya1815/Final-Project-Web-Development-Course/blob/main/Presentation_Letter.html) link.
 
 ## Installation
 
