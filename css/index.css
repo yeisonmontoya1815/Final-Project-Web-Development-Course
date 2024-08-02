@@ -52,7 +52,7 @@ li {
 }
 
 a {
-  color: #fff;
+  color: #efe9e9;
   text-decoration: none;
 }
 
@@ -60,6 +60,11 @@ a:hover {
   text-decoration: underline;
   color: #ffeb3b;
   /* Light yellow hover effect */
+}
+
+#a > pressLetter{
+  color: #0d0d0d;
+  text-decoration: none;
 }
 
 /* Menu Toggle Styles */
