@@ -1,10 +1,10 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px 20px 20px 20px;
+  margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  padding-top: 10px;
+  padding-top: 60px;
   /* Adjust for fixed header */
 }
 
@@ -12,14 +12,17 @@ body {
 header {
   background-color: hsl(0, 91%, 40%);
   color: #fff;
-  padding: 0px 0;
-  position: relative;
+  padding: 10px 0;
+  position: fixed;
+  /* Fixed positioning */
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  /* Ensures it stays on top */
   text-align: right;
   box-shadow: 0 2px 4px rgba(22, 138, 14, 0.1);
+  /* Adds shadow for depth */
 }
 
 /* Navigation Styles */
@@ -98,27 +101,30 @@ a:hover {
 .hero-section {
   background-image: url("../images/diamond.webp");
   background-size: cover;
+  /* Ajustar para cubrir toda la sección */
   background-position: -150px;
+  /* Mueve la imagen 50 píxeles a la izquierda */
   background-repeat: repeat-x;
+  /* Evitar repetir la imagen de fondo */
   position: relative;
-  padding: 30px;
+  /* Permitir posicionamiento de elementos hijos */
+  padding: 80px;
   color: #000000;
-  text-align: right;
+  /* Asegurar buen contraste del texto con el fondo */
+  text-align: end;
+  /* Alinear texto a la derecha */
   font-family: Arial, sans-serif;
   font-size: 2rem;
   font-weight: bolder;
+  display: block;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: flex-end;
   height: 40vh;
+  /* Altura completa del viewport */
   box-sizing: border-box;
   overflow: hidden;
-  border: #d0d2d0 2px solid;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    text-align: center;
-  }
+  border: #d0d2d0 2px double;
+  /* Ajustar color según sea necesario */
 }
 
 /* Logo Styling */
@@ -141,7 +147,7 @@ a:hover {
 /* Text Styling */
 .hero-section h1,
 .hero-section p {
-  margin: 20px auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -185,7 +191,7 @@ h3 {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
   width: 200px;
   position: relative;
@@ -368,31 +374,31 @@ form button:hover {
 }
 
 /* Footer Styles */
-
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
+  background-color: hsl(0, 91%, 40%);
+  color: #fff;
   text-align: center;
-  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  font-size: 1rem;
 }
 
 footer .social-media {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+footer .social-media p {
+  margin: 0;
+  font-weight: bold;
 }
 
 footer .social-media a {
-  color: white;
   margin: 0 10px;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-footer .social-media a:hover {
-  text-decoration: underline;
-}
-
-footer .social-media i {
-  margin-right: 5px;
+footer .social-media a i {
+  margin-right: 8px;
 }
 
 footer .social-media a:hover {
