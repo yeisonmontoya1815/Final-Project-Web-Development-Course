@@ -445,67 +445,7 @@ footer .social-media a:hover {
   }
 }
 
-/* Contact Section Styles */
-#contact {
-  background-color: #fff;
-  padding: 50px;
-  margin: 40px auto;
-  /* Centered with margin auto */
-  max-width: 600px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.contactTitle,
-.contactSubTitle {
-  color: #0c0c0c;
-  font-size: xx-large;
-  text-align: center;
-  align-items: baseline;
-  align-content: flex-start;
-}
-
-.contactTitle {
-  font-size: xx-large;
-  font-weight: bold;
-}
-
-.contactSubTitle {
-  font-size: x-large;
-  font-weight: bolder;
-}
-
-#contactForm div {
-  margin-bottom: 15px;
-}
-
-#contactForm label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-#contactForm input,
-#contactForm textarea {
-  width: 100%;
-  /* Full width */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#contactForm button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#contactForm button:hover {
-  background-color: #555;
-}
-
+/* Button Styles */
 .button {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   display: inline-block;
