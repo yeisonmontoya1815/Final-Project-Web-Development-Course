@@ -652,13 +652,17 @@ footer .social-media a:hover {
   text-align: center;
 }
 
-.Shopping:hover {
-  color: #d4660cb1;
-  /* Light yellow hover effect */
-  font-weight: bolder;
-  /* Bold text */
+.Shopping {
+  color: #0a0a0ab1;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   /* Subtle shadow for text */
+}
+
+.Shopping:hover {
+  color: #0037adb1;
+  font-weight: bolder;
+  font-size: x-large;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .video-container {
