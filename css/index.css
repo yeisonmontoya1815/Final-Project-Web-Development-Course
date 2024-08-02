@@ -620,7 +620,7 @@ footer .social-media a:hover {
   height: 315px;
 }
 
-#a > #pressLetter{
+a > #pressLetter{
   color: #0d0d0d;
   text-decoration: none;
 }
