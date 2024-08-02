@@ -11,7 +11,7 @@ body {
 header {
   background-color: hsl(0, 91%, 40%);
   color: #fff;
-  padding: 20px 0;
+  padding: 15px 20px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -21,89 +21,114 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .navbar {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-header .contactFormList {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-header .contactFormList li {
-  margin: 0 15px;
-}
-
-header .contactFormList a img {
-  height: 50px;
-  vertical-align: middle;
-}
-
 header .contactTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
 header .contactSubTitle {
   color: #f4f4f4;
   font-size: 1.5rem;
-  margin-top: 0;
+  margin: 5px 0;
 }
 
-/* Contact Section Styles */
-#contact {
+header nav {
+  margin: 10px 0;
+}
+
+header .checkoutNavBar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header .checkoutNavBar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header .checkoutNavBar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .checkoutNavBar a:hover {
+  text-decoration: underline;
+  color: #ffeb3b; /* Light yellow hover effect */
+}
+
+/* Section Styles */
+section {
   padding: 40px;
   background-color: #fff;
   border-radius: 8px;
-  margin: 80px auto;
+  margin: 20px auto;
   max-width: 800px;
+  text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  margin-top: 80px; /* Adjusted margin to prevent overlap with fixed header */
 }
 
-#contact h2 {
+section h2 {
   color: #c31414;
+  font-size: 2rem;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 
-#contact p {
-  color: #333;
-  margin-bottom: 20px;
+section p {
+  color: #555;
+  font-size: 1rem;
+  margin: 15px 0;
 }
 
-#contactForm div {
-  margin-bottom: 20px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contactForm label {
+form div {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form label {
   display: block;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
-#contactForm input,
-#contactForm textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
-#contactForm button {
-  background-color: hsl(0, 91%, 40%);
+form input:focus,
+form textarea:focus {
+  border-color: #c31414;
+  outline: none;
+}
+
+form button {
+  background-color: #c31414;
   color: #fff;
-  padding: 10px 20px;
   border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#contactForm button:hover {
-  background-color: #d32f2f; /* Darker red hover effect */
+form button:hover {
+  background-color: #a00;
 }
 
 /* Footer Styles */
@@ -113,24 +138,6 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 1rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer button {
-  background-color: #fff;
-  color: hsl(0, 91%, 40%);
-  border: 1px solid hsl(0, 91%, 40%);
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-footer button:hover {
-  background-color: hsl(0, 91%, 30%);
-  color: #fff;
 }
 
 footer .social-media {
@@ -160,7 +167,12 @@ footer .social-media a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header .navbar {
+  header .checkoutNavBar {
     flex-direction: column;
+    align-items: center;
+  }
+
+  header .checkoutNavBar li {
+    margin: 10px 0;
   }
 }

@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Radiant Treasures</title>
 
-    <link rel="stylesheet" href="css/contact.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Radiant Treasures</title>
 
-    <!-- fonts  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <ul class="contactFormList">
-          <li class="logo">
-            <a href="index.html">
-              <img src="../images/Logo.png" alt="Logo" style="height: 50px" />
-            </a>
-          </li>
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- form action to formspree.io -->
+  <form action="https://formspree.io/f/manwylaq" method="POST">
+        <header>
+      <h1 class="contactTitle">Radiant Treasures</h1>
+      <h2 class="contactSubTitle">Contact us!</h2>
+      <nav class="checkoutNavBar">
+        <ul>
+          <li class="checkoutNavBar"><a href="index.html">Home</a></li>
         </ul>
       </nav>
-      <h1 class="contactTitle">Radiant Treasures</h1>
-      <h2 class="contactSubTitle">Contact Form</h2>
     </header>
 
     <section id="contact">
@@ -34,7 +31,7 @@
         If you have any questions, feel free to reach out to us using the form
         below.
       </p>
-      <form id="contactForm" onsubmit="return handleContactFormSubmit()">
+      <form id="contactForm" action="confirmation.html" method="get">
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -54,24 +51,18 @@
 
     <footer>
       <p>&copy; 2024 Radiant Treasures. All rights reserved.</p>
-      <button onclick="window.location.href='contact.html'">Contact Us</button>
       <div class="social-media">
         <p>Follow us on:</p>
-        <a href="https://www.facebook.com" target="_blank"
-          ><i class="fab fa-facebook"></i> Facebook</a
-        >
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i> Instagram</a
-        >
-        <a href="https://www.linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-        <a href="mailto:info@radianttreasures.com"
-          ><i class="fas fa-envelope"></i> Email</a
-        >
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:info@radianttreasures.com"><i class="fas fa-envelope"></i> Email</a>
       </div>
-    </footer>
+  </form>
 
-    <script src="js/scripts.js"></script>
-  </body>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

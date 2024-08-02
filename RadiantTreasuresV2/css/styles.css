@@ -45,6 +45,14 @@ nav {
   text-decoration: none;
 }
 
+.topnav a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
 .navbar a:hover {
   text-decoration: underline;
   color: #ffeb3b; /* Light yellow hover effect */
